@@ -7,7 +7,7 @@ const Profile = () => {
     setName(event.target.value);
   };
   return (
-    <div className="transition-all duration-500 bg-[#F7FAFC] min-h-screen min-w-[81%] p-8 font-display dark:bg-black">
+    <div className="transition-all duration-500 bg-[#F7FAFC] min-h-screen min-w-[81%] p-8 font-display dark:bg-black mb-16 md:mb-0">
       <p className="font-semibold text-3xl mb-10 dark:text-white">
         Personal Information
       </p>

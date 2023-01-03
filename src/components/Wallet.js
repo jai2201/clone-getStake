@@ -1,9 +1,9 @@
 const Wallet = () => {
   return (
-    <div className="transition-all duration-500 bg-[#F7FAFC] min-h-screen min-w-[81%] p-8 dark:bg-black">
+    <div className="transition-all duration-500 py-4 px-6 bg-[#F7FAFC] dark:bg-black min-h-screen w-full md:p-8 mb-16 md:mb-0">
       <p className="font-semibold text-3xl dark:text-white">Wallet</p>
-      <div className="mt-10 flex justify-between">
-        <div className="bg-white w-1/2 mr-3 p-8 py-9 rounded-xl flex justify-between dark:bg-slate-800">
+      <div className="mt-10 flex justify-between flex-col md:flex-row">
+        <div className="bg-white md:w-1/2 md:mr-3 p-2 md:p-8 py-9 rounded-xl flex flex-row justify-between dark:bg-slate-800">
           <div className="">
             <p className="text-slate-600 font-light text-xl mb-5 dark:text-white">
               Cash balance
@@ -26,7 +26,7 @@ const Wallet = () => {
             </button>
           </div>
         </div>
-        <div className="bg-white w-1/2 ml-3 p-8 py-9 rounded-xl flex justify-between dark:bg-slate-800">
+        <div className="bg-white mt-5 md:mt-0 md:w-1/2 md:ml-3 p-2 md:p-8 py-12 md:py-9 rounded-xl flex justify-between dark:bg-slate-800">
           <div>
             <p className="text-slate-600 font-light text-xl mb-5 dark:text-white">
               Rewards balance
@@ -41,7 +41,7 @@ const Wallet = () => {
         </div>
       </div>
       <p className="text-xl mt-8 font-semibold dark:text-white">Transactions</p>
-      <div className="bg-white w-full mt-4 px-12 rounded-xl dark:bg-slate-800">
+      <div className="bg-white w-full mt-4 px-12 rounded-xl overflow-hidden dark:bg-slate-800">
         <div className="flex py-4">
           <span className="mr-20 dark:text-white">Type</span>
           <span className="mx-20 dark:text-white">Status</span>
@@ -57,12 +57,12 @@ const Wallet = () => {
           No transactions yet
         </div>
       </div>
-      <div className="flex mt-4 justify-between">
-        <div className="w-1/2 rounded-xl mr-4">
+      <div className="flex mt-4 justify-between flex-col md:flex-row">
+        <div className="md:w-1/2 rounded-xl md:mr-4">
           <p className="text-xl mt-8 font-semibold mb-3 dark:text-white">
             Cards
           </p>
-          <div className="rounded-xl bg-white p-8 dark:bg-slate-800">
+          <div className="rounded-xl bg-white px-4 py-9 md:p-8 dark:bg-slate-800">
             <div className="flex mb-4">
               <div className="bg-slate-100 w-fit rounded p-2 my-auto">
                 <i className="fa fa-solid fa-credit-card fa-xl m-auto" />
@@ -76,11 +76,11 @@ const Wallet = () => {
             </button>
           </div>
         </div>
-        <div className="w-1/2 rounded-xl ml-4">
+        <div className="md:w-1/2 rounded-xl md:ml-4">
           <p className="text-xl mt-8 font-semibold mb-3 dark:text-white">
             Banks
           </p>
-          <div className="rounded-xl bg-white p-8 dark:bg-slate-800">
+          <div className="rounded-xl bg-white px-4 py-9 md:p-8 dark:bg-slate-800">
             <div className="flex mb-4">
               <div className="bg-slate-100 w-fit rounded p-2 my-auto">
                 <i className="fa fa-solid fa-building-columns fa-xl m-auto" />

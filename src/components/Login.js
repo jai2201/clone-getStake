@@ -34,9 +34,9 @@ const Login = () => {
   };
 
   return (
-    <div className="transition-all duration-500 mx-auto min-h-screen bg-[#121C30] w-full p-36">
-      <div className="bg-white text-black rounded-xl text-white pb-12 px-12 shadow-xl w-[550px] mx-auto py-4">
-        <form onSubmit={handleSubmit}>
+    <div className="transition-all duration-500 p-12 overflow-hidden mx-auto min-h-screen bg-[#121C30] w-full md:p-36">
+      <div className="bg-white text-black rounded-xl overflow-hidden text-white px-6 pb-12 md:px-12 shadow-xl md:w-[550px] mx-auto py-4">
+        <form onSubmit={handleSubmit} className="overflow-hidden">
           <p className="font-extrabold text-4xl text-black text-center my-8 text-xl">
             Prypto
           </p>
@@ -45,7 +45,7 @@ const Login = () => {
           </label>
           <br />
           <input
-            className="focus:outline	focus:border-green-500 border outline-transparent outline-offset-2 rounded-md w-30 py-3 w-full mt-2 text-black pl-4"
+            className="focus:outline focus:border-green-500 border outline-transparent outline-offset-2 rounded-md md:w-30 py-3 w-full mt-2 text-black pl-4"
             type="email"
             required
             onChange={handleChange('email')}
@@ -57,7 +57,7 @@ const Login = () => {
           <label className="text-base font-semibold text-black">Password</label>
           <br />
           <input
-            className="focus:outline focus:border-green-500 border outline-transparent outline-offset-2 rounded-md w-30 py-3 w-full mt-2 text-black pl-4"
+            className="focus:outline focus:border-green-500 border outline-transparent outline-offset-2 rounded-md md:w-30 py-3 w-full mt-2 text-black pl-4"
             type="text"
             value={values.password}
             onChange={handleChange('password')}

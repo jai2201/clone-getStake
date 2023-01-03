@@ -36,7 +36,7 @@ const AuthWrapper = () => {
     <Navigate to="/login" replace />
   ) : (
     <div className="flex flex-col-reverse md:flex-row">
-      <div className="md:min-w-min md:w-[19%]">
+      <div className="md:min-w-min md:w-[19%] dark:bg-black">
         <Sidebar />
       </div>
       <div className="md:min-w-[81%]">

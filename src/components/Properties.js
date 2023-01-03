@@ -1,8 +1,14 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import SimpleImageSlider from 'react-simple-image-slider';
+import { useNavigate } from 'react-router-dom';
+import * as APPLICATION_URLS from '../utils/ApplicationURLs';
 
 const Properties = () => {
+  const navigate = useNavigate();
+  const handleRedirectToPropertyDetailsPage = () => {
+    navigate(APPLICATION_URLS.PROPERTY_DETAILS);
+  };
   const images = [
     'https://foreignbuyerswatch.com/wp-content/uploads/2019/07/Capture-d%E2%80%99e%CC%81cran-2019-07-26-a%CC%80-13.14.52.png',
     'https://pic.le-cdn.com/thumbs/520x390/480/1/properties/Property-1f2d0b2f2b8d637e89977f8f757d6ce2-75489865.jpg',
@@ -10,7 +16,7 @@ const Properties = () => {
     'https://www.manglamradiance.com/blog/wp-content/uploads/2020/09/slider10.jpg',
   ];
   return (
-    <div className="transition-all duration-500 py-4 px-6 bg-[#F7FAFC] dark:bg-black min-h-screen w-full md:p-8">
+    <div className="transition-all duration-500 py-4 px-6 bg-[#F7FAFC] dark:bg-black min-h-screen w-full md:p-8 mb-16 md:mb-0">
       <p className="font-semibold text-2xl text-center md:text-left md:text-3xl dark:text-white">
         Properties
       </p>
@@ -37,7 +43,10 @@ const Properties = () => {
         </TabList>
         <TabPanel>
           <div className="grid sm:grid-cols-1 md:grid-cols-3 md:gap-6 md:flex md:flex-row">
-            <div className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800">
+            <div
+              onClick={handleRedirectToPropertyDetailsPage}
+              className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800"
+            >
               <SimpleImageSlider
                 style={{
                   margin: '0 auto',
@@ -128,7 +137,10 @@ const Properties = () => {
                 </div>
               </div>
             </div>
-            <div className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-5 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800">
+            <div
+              onClick={handleRedirectToPropertyDetailsPage}
+              className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-5 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800"
+            >
               <SimpleImageSlider
                 style={{
                   margin: '0 auto',
@@ -219,7 +231,10 @@ const Properties = () => {
                 </div>
               </div>
             </div>
-            <div className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-5 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800">
+            <div
+              onClick={handleRedirectToPropertyDetailsPage}
+              className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-5 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800"
+            >
               <SimpleImageSlider
                 style={{
                   margin: '0 auto',
@@ -314,7 +329,10 @@ const Properties = () => {
         </TabPanel>
         <TabPanel>
           <div className="grid sm:grid-cols-1 md:grid-cols-3 md:gap-6 md:flex md:flex-row">
-            <div className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800">
+            <div
+              onClick={handleRedirectToPropertyDetailsPage}
+              className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800"
+            >
               <SimpleImageSlider
                 style={{
                   margin: '0 auto',
@@ -409,7 +427,10 @@ const Properties = () => {
         </TabPanel>
         <TabPanel>
           <div className="grid sm:grid-cols-1 md:grid-cols-3 md:gap-6 md:flex md:flex-row">
-            <div className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800">
+            <div
+              onClick={handleRedirectToPropertyDetailsPage}
+              className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800"
+            >
               <div className="bg-[#41CE8E] text-white text-center p-1 text-base font-semibold">
                 Sold
               </div>
@@ -503,7 +524,10 @@ const Properties = () => {
                 </div>
               </div>
             </div>
-            <div className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800">
+            <div
+              onClick={handleRedirectToPropertyDetailsPage}
+              className="transition-all duration-200 bg-white mx-auto md:mx-0 w-[95%] md:w-[370px] min-h-fit rounded-xl overflow-hidden mt-6 md:mt-12 hover:-translate-y-2 cursor-pointer dark:bg-slate-800"
+            >
               <div className="bg-[#41CE8E] text-white text-center p-1 text-base font-semibold">
                 Sold
               </div>
