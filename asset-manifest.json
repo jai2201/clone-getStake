@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/get-stake-clone/static/css/main.ff99dcf7.css",
-    "main.js": "/get-stake-clone/static/js/main.600d54d3.js",
-    "index.html": "/get-stake-clone/index.html",
-    "main.ff99dcf7.css.map": "/get-stake-clone/static/css/main.ff99dcf7.css.map",
-    "main.600d54d3.js.map": "/get-stake-clone/static/js/main.600d54d3.js.map"
+    "main.css": "/clone-getStake/static/css/main.ff99dcf7.css",
+    "main.js": "/clone-getStake/static/js/main.600d54d3.js",
+    "index.html": "/clone-getStake/index.html",
+    "main.ff99dcf7.css.map": "/clone-getStake/static/css/main.ff99dcf7.css.map",
+    "main.600d54d3.js.map": "/clone-getStake/static/js/main.600d54d3.js.map"
   },
   "entrypoints": [
     "static/css/main.ff99dcf7.css",
