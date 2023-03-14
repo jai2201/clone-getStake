@@ -8,7 +8,7 @@ const AuthWrapper = () => {
     if (token && email && token !== '' && email !== '') {
       axios
         .post(
-          'https://wu9gxbv1r1.execute-api.ap-south-1.amazonaws.com/prod/verify',
+          'https://324ttxcuga.execute-api.ap-south-1.amazonaws.com/prod/verify',
           {
             email: email,
             token: token,

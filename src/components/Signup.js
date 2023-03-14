@@ -18,7 +18,7 @@ const Signup = () => {
     e.preventDefault();
     axios
       .post(
-        'https://wu9gxbv1r1.execute-api.ap-south-1.amazonaws.com/prod/signup',
+        'https://324ttxcuga.execute-api.ap-south-1.amazonaws.com/prod/signup',
         {
           email: values.email,
           password: values.password,
@@ -26,10 +26,12 @@ const Signup = () => {
         }
       )
       .then((res) => {
-        localStorage.setItem('email', values.email);
-        localStorage.setItem('token', res.data.token);
-        localStorage.setItem('name', values.name);
-        navigate(APPLICATION_URLS.PROPERTIES);
+        if (res.data.body.token != null || res.data.body.token != undefined) {
+          localStorage.setItem('email', values.email);
+          localStorage.setItem('token', res.data.body.token);
+          localStorage.setItem('name', values.name);
+          navigate(APPLICATION_URLS.PROPERTIES);
+        }
       })
       .catch((error) => {
         console.log(error);

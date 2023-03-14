@@ -17,16 +17,19 @@ const Login = () => {
     e.preventDefault();
     axios
       .post(
-        'https://wu9gxbv1r1.execute-api.ap-south-1.amazonaws.com/prod/login',
+        'https://324ttxcuga.execute-api.ap-south-1.amazonaws.com/prod/login',
         {
           email: values.email,
           password: values.password,
         }
       )
       .then((res) => {
-        localStorage.setItem('email', values.email);
-        localStorage.setItem('token', res.data.token);
-        navigate(APPLICATION_URLS.PROPERTIES);
+        console.log(res);
+        if (res.data.body.token != undefined || res.data.body.token != null) {
+          localStorage.setItem('email', values.email);
+          localStorage.setItem('token', res.data.body.token);
+          navigate(APPLICATION_URLS.PROPERTIES);
+        }
       })
       .catch((error) => {
         console.log(error);
